@@ -85,9 +85,9 @@ void Sold(char x[16][31]){
 			true = 0;
 		}
 		if(row>=16||col>=31){
-			printf("Input row should be less than 16, Input column should be less than 31");
+			printf("Input row should be less than 16, Input column should be less than 31\n");
 		}
-		if(isAvailable(x,row,col)){
+		else if(isAvailable(x,row,col)){
 			x[row][col] = '*';
 			numSold++;
 			totalSeat--;
